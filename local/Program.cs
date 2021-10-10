@@ -16,7 +16,7 @@ namespace project1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new test.crud());
+            Application.Run(new project.signup());
         }
     }
 }

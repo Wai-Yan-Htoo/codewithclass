@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
@@ -18,6 +19,7 @@ namespace project1.test
         public crud()
         {
             InitializeComponent();
+            
         }
 
         MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -77,8 +79,32 @@ namespace project1.test
 
         private void btn_read_Click(object sender, EventArgs e)
         {
+            dataGridView1.ColumnCount = 3;
+            dataGridView1.Columns[0].HeaderText = "ID";
+            dataGridView1.Columns[1].HeaderText = "Brand Name";
+            dataGridView1.Columns[2].HeaderText = "Price";
+            MySqlDataReader reader;
+            string query = "select * from pcstore";
+            connection = new MySqlConnection(serverinfo);
+            connection.Open();
 
-            ArrayList data = new ArrayList();
+            string data = "";
+            command = new MySqlCommand(query, connection);
+            reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                //data += $"{dataGridView1.Rows.Add();} {reader.GetValue(1)} {reader.GetValue(2)}";
+                dataGridView1.Rows.Add(reader.GetValue(0));
+                dataGridView1.Rows.Add(reader.GetValue(1));
+                dataGridView1.Rows.Add(reader.GetValue(2));
+            }
+            
+
+            string[] row = new string[] { "1", "Product 1", "1000" };
+            
+            
+
+            /*ArrayList data = new ArrayList();
             MySqlDataReader reader;
             string query = "select * from pcstore";
             connection = new MySqlConnection(serverinfo);
@@ -92,9 +118,26 @@ namespace project1.test
             command.ExecuteNonQuery();
             dt = new DataTable();
             da = new MySqlDataAdapter(command);//
+            
             da.Fill(dt);
-            dataGridView1.DataSource = dt.DefaultView;
+            dataGridView1.DataSource = dt.DefaultView;*/
 
+        }
+
+        private void btn_click_Click(object sender, EventArgs e)
+        {
+            int i;
+
+            progressBar1.Minimum = 0;
+            progressBar1.Maximum = 100;//10%  
+
+            //file size   200MB    //200-20MB=   180
+
+            for (i = 0; i <= 200; i++)
+            {
+                progressBar1.Value = i;
+                Thread.Sleep(500);
+            }
         }
     }
 }

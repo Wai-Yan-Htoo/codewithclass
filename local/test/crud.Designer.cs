@@ -34,6 +34,8 @@ namespace project1.test
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.btn_click = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,14 +86,33 @@ namespace project1.test
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(609, 365);
+            this.dataGridView1.Size = new System.Drawing.Size(509, 408);
             this.dataGridView1.TabIndex = 4;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(12, 458);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(509, 33);
+            this.progressBar1.TabIndex = 5;
+            // 
+            // btn_click
+            // 
+            this.btn_click.Location = new System.Drawing.Point(615, 458);
+            this.btn_click.Name = "btn_click";
+            this.btn_click.Size = new System.Drawing.Size(154, 43);
+            this.btn_click.TabIndex = 6;
+            this.btn_click.Text = "Click";
+            this.btn_click.UseVisualStyleBackColor = true;
+            this.btn_click.Click += new System.EventHandler(this.btn_click_Click);
             // 
             // crud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(986, 573);
+            this.Controls.Add(this.btn_click);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_update);
@@ -111,5 +132,7 @@ namespace project1.test
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Button btn_click;
     }
 }

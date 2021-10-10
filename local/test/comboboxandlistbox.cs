@@ -45,7 +45,31 @@ namespace project1.test
 
         private void btn_clear_Click(object sender, EventArgs e)
         {
+            ColorDialog dlg = new ColorDialog();
+            dlg.ShowDialog();
+
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                string str = null;
+                str = dlg.Color.Name;
+                MessageBox.Show(str);
+            }
             listBox1.Items.Clear();
+            for(int i = 0; i < 10; i++)
+            {
+                textBox1.Text += i.ToString()+"\r\n";
+                textBox2.Text += i.ToString()+"\r\n";
+            }
+        }
+
+        private void comboboxandlistbox_Load(object sender, EventArgs e)
+        {
+            textBox2.ScrollBars = ScrollBars.Both;
+        }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Save");
         }
     }
 }
