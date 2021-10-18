@@ -144,6 +144,14 @@ namespace project1
             }
         }
 
+        private void btn_click_Click_1(object sender, EventArgs e)
+        {
+            int a = 14;
+            MessageBox.Show(Convert.ToBoolean(a).ToString());
+        }
+
+
+
         /*private void txt_name_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

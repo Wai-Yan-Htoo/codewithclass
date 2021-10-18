@@ -17,47 +17,61 @@ namespace project1.project
         {
             InitializeComponent();
         }
+        data_connectionclass dc = new data_connectionclass();
 
         //password checking
         void check_pwd()
         {
-            if (txt_password.Text == txt_confirm_password.Text)
+            try
             {
-                
-                lb_wrongpassword.Text = "";
-                user_info();
-            }
-            else
+                if (txt_password.Text == txt_confirm_password.Text && txt_password.Text != "" && txt_name.Text != "" && txt_email.Text != "" && txt_phone.Text != "")
+                {
+
+                    lb_wrongpassword.Text = "";
+                    user_info();
+                    Login log = new Login();
+                    log.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    lb_wrongpassword.Text = "Wrong Password";
+                }
+            }catch(Exception m)
             {
-                lb_wrongpassword.Text = "Wrong Password";
+                MessageBox.Show(m.Message);
             }
         }
 
         //mysql server information 
-        string serverinfo = string.Format("server=localhost;uid=root;pwd=;database=kbtc"),query;
-        MySqlConnection connection;
+        string query;
         MySqlDataAdapter adapter = new MySqlDataAdapter();
 
         void user_info()
         {
-            string name=txt_name.Text;
-            string email=txt_email.Text;
-            string phone=txt_phone.Text;
-            string password = txt_password.Text;
-            string cmf_pwd = txt_confirm_password.Text;
-            //data encryption   caesar cipher  hello  khoor  3  
-            password=Encipher(password, 3);
-            cmf_pwd = Encipher(cmf_pwd, 3);
-            //insert query   db=kbtc table=user_info
-            connection = new MySqlConnection(serverinfo);
-            connection.Open();
+            try
+            {
+                string name = txt_name.Text;
+                string email = txt_email.Text;
+                string phone = txt_phone.Text;
+                string password = txt_password.Text;
+                string cmf_pwd = txt_confirm_password.Text;
+                //data encryption   caesar cipher  hello  khoor  3  
+                password = Encipher(password, 3);
+                cmf_pwd = Encipher(cmf_pwd, 3);
+                //insert query   db=kbtc table=user_info
+                dc.connect_to_server();
 
-            query = "insert into user_info(name,email,phone,password,confirm_password) " +
-                "values('"+name+"','"+email+"','"+phone+"','"+password+"','"+cmf_pwd+"')";
-            adapter.InsertCommand = new MySqlCommand(query,connection);
-            adapter.InsertCommand.ExecuteNonQuery();
-            connection.Close();
+                query = "insert into user_info(name,email,phone,password,confirm_password) " +
+                    "values('" + name + "','" + email + "','" + phone + "','" + password + "','" + cmf_pwd + "')";
+                adapter.InsertCommand = new MySqlCommand(query, dc.connection);
+                adapter.InsertCommand.ExecuteNonQuery();
 
+                dc.connection.Close();
+            }catch(Exception m)
+            {
+                MessageBox.Show(m.Message);
+            }
         }
         public static char cipher(char ch, int key)
         {
@@ -87,6 +101,14 @@ namespace project1.project
         private void btn_register_Click(object sender, EventArgs e)
         {
             check_pwd();
+
+        }
+
+        private void llb_already_account_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login log = new Login();
+            log.Show();
+            this.Hide();
         }
     }
 }

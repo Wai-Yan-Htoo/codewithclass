@@ -49,6 +49,7 @@ namespace project1
             this.btn_click.TabIndex = 0;
             this.btn_click.Text = "click";
             this.btn_click.UseVisualStyleBackColor = true;
+            this.btn_click.Click += new System.EventHandler(this.btn_click_Click_1);
             // 
             // label1
             // 

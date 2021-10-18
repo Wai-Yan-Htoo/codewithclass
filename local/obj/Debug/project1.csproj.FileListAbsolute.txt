@@ -119,3 +119,4 @@ C:\Users\DELL\Desktop\codewithclass\local\obj\Debug\project1.csproj.CopyComplete
 C:\Users\DELL\Desktop\codewithclass\local\obj\Debug\project1.exe
 C:\Users\DELL\Desktop\codewithclass\local\obj\Debug\project1.pdb
 C:\Users\DELL\Desktop\codewithclass\local\obj\Debug\project1.project.signup.resources
+C:\Users\DELL\Desktop\codewithclass\local\obj\Debug\project1.project.Login.resources

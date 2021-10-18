@@ -211,6 +211,7 @@ namespace project1.project
             this.llb_already_account.TabIndex = 15;
             this.llb_already_account.TabStop = true;
             this.llb_already_account.Text = "Already Account";
+            this.llb_already_account.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llb_already_account_LinkClicked);
             // 
             // lb_wrongpassword
             // 
@@ -245,6 +246,7 @@ namespace project1.project
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Name = "signup";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "signup";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
