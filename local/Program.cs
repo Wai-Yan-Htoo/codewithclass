@@ -16,9 +16,17 @@ namespace project1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new project.signup());
+            Application.Run(new Form1());
         }
     }
 }
 
 
+/*
+ dec =1
+ 1024 512 256 128 64 32 16 8 4 2 1
+                           1 0 0 0    
+ 
+ 
+ 
+ */
