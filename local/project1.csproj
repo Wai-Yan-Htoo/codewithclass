@@ -74,6 +74,12 @@
     <Compile Include="test\checkboxcontrol.Designer.cs">
       <DependentUpon>checkboxcontrol.cs</DependentUpon>
     </Compile>
+    <Compile Include="test\checkgmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test\checkgmail.Designer.cs">
+      <DependentUpon>checkgmail.cs</DependentUpon>
+    </Compile>
     <Compile Include="test\comboboxandlistbox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </Compile>
     <EmbeddedResource Include="test\checkboxcontrol.resx">
       <DependentUpon>checkboxcontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test\checkgmail.resx">
+      <DependentUpon>checkgmail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="test\comboboxandlistbox.resx">
       <DependentUpon>comboboxandlistbox.cs</DependentUpon>

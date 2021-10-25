@@ -100,7 +100,15 @@ namespace project1.project
 
         private void btn_register_Click(object sender, EventArgs e)
         {
-            check_pwd();
+            if (character_of_gmail()== true)
+            {
+                check_pwd();//to do update  change void function to bool function
+            }
+            else
+            {
+                MessageBox.Show("you need to check gmail have '@gmail.com' or not ");
+            }
+            
 
         }
 
@@ -110,5 +118,32 @@ namespace project1.project
             log.Show();
             this.Hide();
         }
+
+        public bool character_of_gmail()
+        {
+            bool rt_data = false;
+            try
+            {
+                
+                string data = "";
+                string email = txt_email.Text;
+                int len = email.Length;
+                len -= 10;
+                for (; len < email.Length; len++)
+                {
+                    data += email[len];
+                }
+                //left update for perfect mail
+                if (data == "@gmail.com")
+                {
+                    rt_data = true;
+                }
+            }catch(Exception m)
+            {
+                MessageBox.Show(m.Message);
+            }
+            return rt_data;
+        }
+
     }
 }
