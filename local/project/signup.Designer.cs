@@ -47,6 +47,7 @@ namespace project1.project
             this.btn_cancel = new System.Windows.Forms.Button();
             this.llb_already_account = new System.Windows.Forms.LinkLabel();
             this.lb_wrongpassword = new System.Windows.Forms.Label();
+            this.lab_errorpwd = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -69,7 +70,7 @@ namespace project1.project
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(409, 42);
+            this.panel1.Size = new System.Drawing.Size(414, 42);
             this.panel1.TabIndex = 1;
             // 
             // label2
@@ -96,7 +97,7 @@ namespace project1.project
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 248);
+            this.label3.Location = new System.Drawing.Point(12, 258);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 22);
             this.label3.TabIndex = 4;
@@ -106,7 +107,7 @@ namespace project1.project
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 295);
+            this.label4.Location = new System.Drawing.Point(12, 318);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 22);
             this.label4.TabIndex = 5;
@@ -116,7 +117,7 @@ namespace project1.project
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 345);
+            this.label5.Location = new System.Drawing.Point(12, 392);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 22);
             this.label5.TabIndex = 6;
@@ -126,7 +127,7 @@ namespace project1.project
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(10, 400);
+            this.label6.Location = new System.Drawing.Point(10, 460);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(172, 22);
             this.label6.TabIndex = 7;
@@ -143,7 +144,7 @@ namespace project1.project
             // txt_email
             // 
             this.txt_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_email.Location = new System.Drawing.Point(192, 242);
+            this.txt_email.Location = new System.Drawing.Point(192, 252);
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(198, 28);
             this.txt_email.TabIndex = 9;
@@ -151,7 +152,7 @@ namespace project1.project
             // txt_phone
             // 
             this.txt_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_phone.Location = new System.Drawing.Point(192, 289);
+            this.txt_phone.Location = new System.Drawing.Point(192, 312);
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.Size = new System.Drawing.Size(198, 28);
             this.txt_phone.TabIndex = 10;
@@ -159,7 +160,7 @@ namespace project1.project
             // txt_password
             // 
             this.txt_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_password.Location = new System.Drawing.Point(192, 339);
+            this.txt_password.Location = new System.Drawing.Point(190, 389);
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '*';
             this.txt_password.Size = new System.Drawing.Size(198, 28);
@@ -168,7 +169,7 @@ namespace project1.project
             // txt_confirm_password
             // 
             this.txt_confirm_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_confirm_password.Location = new System.Drawing.Point(192, 394);
+            this.txt_confirm_password.Location = new System.Drawing.Point(192, 454);
             this.txt_confirm_password.Name = "txt_confirm_password";
             this.txt_confirm_password.PasswordChar = '*';
             this.txt_confirm_password.Size = new System.Drawing.Size(198, 28);
@@ -180,7 +181,7 @@ namespace project1.project
             this.btn_register.FlatAppearance.BorderSize = 0;
             this.btn_register.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_register.ForeColor = System.Drawing.Color.White;
-            this.btn_register.Location = new System.Drawing.Point(36, 508);
+            this.btn_register.Location = new System.Drawing.Point(36, 552);
             this.btn_register.Name = "btn_register";
             this.btn_register.Size = new System.Drawing.Size(124, 42);
             this.btn_register.TabIndex = 13;
@@ -194,7 +195,7 @@ namespace project1.project
             this.btn_cancel.FlatAppearance.BorderSize = 0;
             this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancel.ForeColor = System.Drawing.Color.White;
-            this.btn_cancel.Location = new System.Drawing.Point(190, 508);
+            this.btn_cancel.Location = new System.Drawing.Point(190, 552);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(110, 42);
             this.btn_cancel.TabIndex = 14;
@@ -205,7 +206,7 @@ namespace project1.project
             // 
             this.llb_already_account.AutoSize = true;
             this.llb_already_account.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llb_already_account.Location = new System.Drawing.Point(255, 442);
+            this.llb_already_account.Location = new System.Drawing.Point(255, 502);
             this.llb_already_account.Name = "llb_already_account";
             this.llb_already_account.Size = new System.Drawing.Size(141, 22);
             this.llb_already_account.TabIndex = 15;
@@ -223,12 +224,22 @@ namespace project1.project
             this.lb_wrongpassword.Size = new System.Drawing.Size(0, 22);
             this.lb_wrongpassword.TabIndex = 16;
             // 
+            // lab_errorpwd
+            // 
+            this.lab_errorpwd.AutoSize = true;
+            this.lab_errorpwd.ForeColor = System.Drawing.Color.Red;
+            this.lab_errorpwd.Location = new System.Drawing.Point(188, 353);
+            this.lab_errorpwd.Name = "lab_errorpwd";
+            this.lab_errorpwd.Size = new System.Drawing.Size(0, 20);
+            this.lab_errorpwd.TabIndex = 17;
+            // 
             // signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(409, 566);
+            this.ClientSize = new System.Drawing.Size(414, 631);
+            this.Controls.Add(this.lab_errorpwd);
             this.Controls.Add(this.lb_wrongpassword);
             this.Controls.Add(this.llb_already_account);
             this.Controls.Add(this.btn_cancel);
@@ -275,5 +286,6 @@ namespace project1.project
         private System.Windows.Forms.Button btn_cancel;
         private System.Windows.Forms.LinkLabel llb_already_account;
         private System.Windows.Forms.Label lb_wrongpassword;
+        private System.Windows.Forms.Label lab_errorpwd;
     }
 }

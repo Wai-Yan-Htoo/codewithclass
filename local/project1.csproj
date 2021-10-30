@@ -54,6 +54,18 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="project\AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="project\AdminAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project\AdminAddProduct.Designer.cs">
+      <DependentUpon>AdminAddProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="project\data_connectionclass.cs" />
     <Compile Include="project\Login.cs">
       <SubType>Form</SubType>
@@ -100,6 +112,12 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project\AdminAddProduct.resx">
+      <DependentUpon>AdminAddProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="project\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

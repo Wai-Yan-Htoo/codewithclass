@@ -12,6 +12,7 @@ using MySql.Data.MySqlClient;
 
 namespace project1.project
 {
+    
     public partial class Login : Form
     {
         public Login()
@@ -148,6 +149,9 @@ namespace project1.project
                     else
                     {
                     MessageBox.Show("login success");
+                    AddProduct ap = new AddProduct();
+                    ap.Show();
+                    this.Hide();
                     }
 
                 }

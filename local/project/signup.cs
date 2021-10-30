@@ -24,18 +24,27 @@ namespace project1.project
         {
             try
             {
-                if (txt_password.Text == txt_confirm_password.Text && txt_password.Text != "" && txt_name.Text != "" && txt_email.Text != "" && txt_phone.Text != "")
+                if (spec_len() == true && uppsercase() == true && lowercase() == true && digitcase() == true)
                 {
 
-                    lb_wrongpassword.Text = "";
-                    user_info();
-                    Login log = new Login();
-                    log.Show();
-                    this.Hide();
+
+                    if (txt_password.Text == txt_confirm_password.Text && txt_password.Text != "" && txt_name.Text != "" && txt_email.Text != "" && txt_phone.Text != "")
+                    {
+
+                        lb_wrongpassword.Text = "";
+                        user_info();
+                        Login log = new Login();
+                        log.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        lb_wrongpassword.Text = "Wrong Password";
+                    }
                 }
                 else
                 {
-                    lb_wrongpassword.Text = "Wrong Password";
+                    lab_errorpwd.Text = "check strong password or not";
                 }
             }catch(Exception m)
             {
@@ -99,7 +108,8 @@ namespace project1.project
         }
 
         private void btn_register_Click(object sender, EventArgs e)
-        {
+        {   
+            
             if (character_of_gmail()== true)
             {
                 check_pwd();//to do update  change void function to bool function
@@ -143,6 +153,74 @@ namespace project1.project
                 MessageBox.Show(m.Message);
             }
             return rt_data;
+        }
+
+        public bool spec_len()
+        {
+            bool data=false;
+            //strong password 1. length at least 8 2. Uppercase 3. Lowercase 4. digit 5. special character
+            char[] special_char = {'!', '@', '#', '$', '%', '^', '&', '*', '?', '/' };
+            string pwd = txt_password.Text;
+            for(int i = 0; i < 10; i++)
+            {
+                for(int j = 0; j < pwd.Length; j++)
+                {
+                    if (pwd[j] == special_char[i] && pwd.Length>=8)
+                    {
+                        data = true;
+                        break;
+                    }
+                    
+                }
+            }
+            return data;
+        }
+        public bool uppsercase()
+        {
+            bool data = false;
+            string pwd=txt_password.Text;
+            for(int i = 0; i < pwd.Length; i++)
+            {
+                if (char.IsUpper(pwd[i]))
+                {
+                    data = true;
+                    break;
+                }
+                
+            }
+            return data;
+        }
+
+        public bool lowercase()
+        {
+            bool data = false;
+            string pwd = txt_password.Text;
+            for (int i = 0; i < pwd.Length; i++)
+            {
+                if (char.IsLower(pwd[i]))
+                {
+                    data = true;
+                    break;
+                }
+                
+            }
+            return data;
+        }
+
+        public bool digitcase()
+        {
+            bool data = false;
+            string pwd = txt_password.Text;
+            for (int i = 0; i < pwd.Length; i++)
+            {
+                if (char.IsDigit(pwd[i]))
+                {
+                    data = true;
+                    break;
+                }
+               
+            }
+            return data;
         }
 
     }
