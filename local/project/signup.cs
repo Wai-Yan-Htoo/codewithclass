@@ -18,7 +18,7 @@ namespace project1.project
             InitializeComponent();
         }
         data_connectionclass dc = new data_connectionclass();
-
+        MySqlDataReader reader;
         //password checking
         void check_pwd()
         {
@@ -107,16 +107,44 @@ namespace project1.project
             return output;
         }
 
-        private void btn_register_Click(object sender, EventArgs e)
-        {   
-            
-            if (character_of_gmail()== true)
+        public bool same_gmail()
+        {
+            bool rt = true;
+            string data = "";
+            string gmail = txt_email.Text;
+            string query = "select email from user_info where email='"+gmail+"'";
+
+            //string query = "select name,password from user_info";
+            dc.connect_to_server();
+            MySqlCommand command = new MySqlCommand(query, dc.connection);
+            reader = command.ExecuteReader();
+            while (reader.Read())
             {
-                check_pwd();//to do update  change void function to bool function
+                data += $"{reader.GetValue(0)}";
+
             }
-            else
+           // MessageBox.Show("data = "+data);
+            if (data!="")
             {
-                MessageBox.Show("you need to check gmail have '@gmail.com' or not ");
+                MessageBox.Show("mail is already exit");
+                rt = false;
+            }
+            return rt;
+            
+        }
+
+        private void btn_register_Click(object sender, EventArgs e)
+        {
+            if (same_gmail() == true)
+            {
+                if (character_of_gmail() == true)
+                {
+                    check_pwd();//to do update  change void function to bool function
+                }
+                else
+                {
+                    MessageBox.Show("you need to check gmail have '@gmail.com' or not ");
+                }
             }
             
 

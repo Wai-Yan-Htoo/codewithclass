@@ -122,3 +122,4 @@ C:\Users\DELL\Desktop\codewithclass\local\obj\Debug\project1.project.signup.reso
 C:\Users\DELL\Desktop\codewithclass\local\obj\Debug\project1.project.Login.resources
 C:\Users\DELL\Desktop\codewithclass\local\obj\Debug\project1.test.checkgmail.resources
 C:\Users\DELL\Desktop\codewithclass\local\obj\Debug\project1.project.AddProduct.resources
+C:\Users\DELL\Desktop\codewithclass\local\obj\Debug\project1.project.AdminAddProduct.resources

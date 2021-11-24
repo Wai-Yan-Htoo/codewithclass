@@ -15,6 +15,8 @@ namespace project1.project
     
     public partial class Login : Form
     {
+
+        public static string n;
         public Login()
         {
             InitializeComponent();
@@ -134,6 +136,7 @@ namespace project1.project
 
             //checking password for encipher
             //reader = command.ExecuteReader();
+            MessageBox.Show(n);
             try
                 {
                     reader = command.ExecuteReader();
@@ -142,17 +145,18 @@ namespace project1.project
                         data += $"{reader.GetValue(0)} {reader.GetValue(1)}";
 
                     }
-                    if (data == "")
+                    if (data != "" || n==txt_password.Text)
                     {
-                    MessageBox.Show("login fail");
+                    MessageBox.Show("login success");
+                    AdminAddProduct ap = new AdminAddProduct();
+                    ap.Show();
+                    this.Hide();
+                   
                     }
                     else
                     {
-                    MessageBox.Show("login success");
-                    AddProduct ap = new AddProduct();
-                    ap.Show();
-                    this.Hide();
-                    }
+                    MessageBox.Show("login fail");
+                }
 
                 }
                 catch (Exception m)
@@ -194,6 +198,15 @@ namespace project1.project
                 output += cipher(ch, key);
 
             return output;
+        }
+
+
+
+        private void btn_forgotpwd_Click(object sender, EventArgs e)
+        {
+            Random rand = new Random();
+            n= rand.Next(999999).ToString();
+            MessageBox.Show(n);
         }
     }
 }

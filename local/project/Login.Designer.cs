@@ -38,7 +38,7 @@ namespace project1.project
             this.txt_password = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btn_login = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_forgotpwd = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -125,19 +125,20 @@ namespace project1.project
             this.btn_login.UseVisualStyleBackColor = false;
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
-            // button1
+            // btn_forgotpwd
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(205, 296);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 42);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "forgotpassword";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_forgotpwd.BackColor = System.Drawing.Color.White;
+            this.btn_forgotpwd.FlatAppearance.BorderSize = 0;
+            this.btn_forgotpwd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_forgotpwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_forgotpwd.ForeColor = System.Drawing.Color.Black;
+            this.btn_forgotpwd.Location = new System.Drawing.Point(205, 296);
+            this.btn_forgotpwd.Name = "btn_forgotpwd";
+            this.btn_forgotpwd.Size = new System.Drawing.Size(203, 42);
+            this.btn_forgotpwd.TabIndex = 15;
+            this.btn_forgotpwd.Text = "forgotpassword";
+            this.btn_forgotpwd.UseVisualStyleBackColor = false;
+            this.btn_forgotpwd.Click += new System.EventHandler(this.btn_forgotpwd_Click);
             // 
             // Login
             // 
@@ -145,7 +146,7 @@ namespace project1.project
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(409, 566);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_forgotpwd);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.label5);
@@ -174,6 +175,6 @@ namespace project1.project
         private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btn_login;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_forgotpwd;
     }
 }
