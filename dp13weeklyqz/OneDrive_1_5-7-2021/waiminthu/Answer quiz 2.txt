@@ -1,0 +1,10 @@
+1. A      
+2. B   t
+3. C (random select)  t
+4. B 
+5. B
+6. A   
+7. 8 t
+8. C (random select)  t  
+9. C  t 
+10. D (random select)   t

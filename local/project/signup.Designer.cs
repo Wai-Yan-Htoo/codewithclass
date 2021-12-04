@@ -70,7 +70,7 @@ namespace project1.project
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(414, 42);
+            this.panel1.Size = new System.Drawing.Size(429, 42);
             this.panel1.TabIndex = 1;
             // 
             // label2
@@ -136,6 +136,7 @@ namespace project1.project
             // txt_name
             // 
             this.txt_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_name.ForeColor = System.Drawing.Color.Black;
             this.txt_name.Location = new System.Drawing.Point(192, 191);
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(198, 28);
@@ -238,7 +239,7 @@ namespace project1.project
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(414, 631);
+            this.ClientSize = new System.Drawing.Size(429, 618);
             this.Controls.Add(this.lab_errorpwd);
             this.Controls.Add(this.lb_wrongpassword);
             this.Controls.Add(this.llb_already_account);

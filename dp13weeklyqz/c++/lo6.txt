@@ -1,0 +1,79 @@
+1. Which header file is required to use file I/O operations?
+A.	<ifstream>
+B.	<ostream>
+C.	<fstream>
+D.	<iostream> 
+
+ANSWER: C
+
+2. Which of the following is used to create an output stream?
+A.	ofstream
+B.	ifstream
+C.	iostream
+D.	fsstream
+
+ANSWER: A
+
+3. Which of the following is used to create a stream that performs both input and output operations?
+A.	ofstream
+B.	ifstream
+C.	iostream
+D.	fstream
+
+ANSWER: D
+
+4. Which of the following is not used as a file opening mode?
+A.	ios::trunc
+B.	ios::binary
+C.	ios::in
+D.	ios::out
+
+ANSWER: A
+
+5. By default, all the files in C++ are opened in _________ mode?
+A.	Text
+B.	Binary
+C.	ISCII
+D.	VTC
+
+ANSWER: A
+
+6. Which of the following is the default mode of the opening using the ofstream class?
+A.	ios::in
+B.	ios::out
+C.	ios::app
+D.	ios::trunc
+
+ANSWER: B
+
+7. What is the return type open() method?
+A.	int
+B.	char
+C.	bool
+D.	float
+
+ANSWER: C
+
+8. Which of the following is the default mode of the opening using the ifstream class?
+A.	ios::in
+B.	ios::out
+C.	ios::app
+D.	ios::trunc
+
+ANSWER: A
+
+9. Which of the following is the default mode of the opening using the fstream class?
+A.	ios::in
+B.	ios::out
+C.	ios::in|ios::out
+D.	no default
+
+ANSWER: D
+
+10. Which among following is correct syntax of closing a file in c++ ?
+A.	myfile$close();
+B.	myfile@close();
+C.	myfile:close();
+D.	myfile.close();
+
+ANSWER: D

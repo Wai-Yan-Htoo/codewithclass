@@ -1,0 +1,35 @@
+1. https://open.kattis.com/problems/lastfactorialdigit
+
+2. https://open.kattis.com/problems/nodup
+
+3. https://open.kattis.com/problems/everywhere
+
+4. https://open.kattis.com/problems/harshadnumbers
+
+5. https://open.kattis.com/problems/reversebinary
+
+6. https://open.kattis.com/problems/mixedfractions
+
+7. https://open.kattis.com/problems/dicecup
+
+8. https://open.kattis.com/problems/tri
+
+
+11    1 0 1 1
+13    1 1 0 1
+32 16 8 4 2 1
+
+a 13/2=6
+
+13%2=1
+
+b a/2=3
+
+a%2=0
+
+c b/2=1
+
+b%2=1
+
+c%2=1
+

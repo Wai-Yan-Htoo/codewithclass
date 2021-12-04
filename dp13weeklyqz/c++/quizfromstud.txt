@@ -1,0 +1,5 @@
+how to make copy constructor?
+how to pass structure to a function?
+repeat
+
+loop

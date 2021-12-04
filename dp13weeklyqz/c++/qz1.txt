@@ -1,0 +1,112 @@
+                                                                                 
+1. What will be the output of the following C++ code?
+
+#include <iostream>
+
+int main(int argc, char const *argv[])
+{
+	cout<<"Hello World";
+	return 0;
+}
+a) Hello World
+b) Compile-time error  b
+c) Run-time error
+d) Segmentation fault
+
+
+2. What is std in C++?
+a) std is a standard class in C++
+b) std is a standard namespace in C++   b
+c) std is a standard header file in C++
+d) std is a standard file reading header in C++
+
+
+3. Which of the following is a correct identifier in C++?
+a) 7var_name
+b) 7VARNAME
+c) VAR_1234   c
+d) $var_name
+//data type variable name
+//string kyaw_kyaw
+//naming rule
+do      a-z A-Z number _(underscore) 
+don't   start with number , special character, space , keyword
+
+4. Which of the following is called address operator?
+a) *       a
+b) &
+c) _
+d) %
+
+
+5. What is the size of a boolean variable in C++?
+a) 1 bit      a
+b) 1 byte
+c) 4 bytes
+d) 2 bytes
+
+6. Which of the following is an exit-controlled loop?
+a) for     //enter
+b) while //enter
+c) do-while          c
+d) all of the mentioned
+
+7. In which part of the for loop termination condition is checked?
+eg: for(I,II,III)
+a) I
+b) II       b
+c) III
+d) IV
+
+8. What will be the output of the following C++ code?
+
+#include<iostream>
+using namespace std;
+int x[100];
+int main()
+{
+    cout << x[99] << endl;
+}
+a) Garbage value
+b) 0                  b
+c) 99
+d) Error
+
+9. What will be the output of the following C++ code?
+
+#include<iostream>
+using namespace std;
+int main ()
+{
+   int cin;
+   cin >> cin;
+   cout << "cin: " << cin;
+   return 0;
+}
+a) cin: garbage value       a
+b) Error
+c) Segmentation fault
+d) Nothing is printed
+
+10. What will be the output of the following C++ code?
+
+    #include <iostream>
+    using namespace std;
+    int main()
+    {
+        
+        void a = 10 , b = 10;
+	cout<<a<<b;
+        int c;
+        c = a + b;
+        cout << c;
+        return 0;
+    }
+a) 20
+b) compile time error     b
+c) runtime error
+d) 40
+
+
+
+

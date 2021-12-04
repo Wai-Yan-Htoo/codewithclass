@@ -1,0 +1,4 @@
+(quiz 1,2)http://www.allindiaexams.in/engineering/cse/c-net-mcq/c-net-data-types-variables-operators
+1. C
+2. B
+3. A

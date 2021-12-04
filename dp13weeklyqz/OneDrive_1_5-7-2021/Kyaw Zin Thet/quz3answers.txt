@@ -1,0 +1,24 @@
+(1) d  t
+(2) b  
+(3) c  t
+(4) c  t
+(5) b  t
+(6) d  t
+(7) d  t
+(8) d   t
+(9) c   t
+(10)c   t
+
+Bonus
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+
+    int ans = a * (b-1);
+
+    cout << ans + 1 << endl;
+}

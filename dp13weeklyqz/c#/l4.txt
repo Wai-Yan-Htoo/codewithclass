@@ -1,0 +1,118 @@
+1. The following C# function “rev_str” takes a string argument and 
+   returns the reversed version of that string. Complete the function.
+   string rev_str(string s) {
+      string rs = "";
+      for (int i = 0; i < s.Length; i++) {
+             (fill your code)     
+      }
+    return rs;
+   }
+a
+A. rs = s[i] + rs;
+B. s = s[i] + rs;
+C. rs = rs + s[i];
+D. s = rs + s[i];
+
+2. What will be the output of the following C# code?
+
+ static void Main(string[] args)
+ {
+     int x;
+     x = 8;
+     int c = 1;
+     while (c <= x)
+     {
+         if (c % 2 == 0)
+         {
+             Console.WriteLine("Execute While " + c + "\t" + "time");
+         }
+         c++;
+     }
+     Console.ReadLine();
+ }
+
+b
+
+A.
+Execute while 1 time
+Execute while 3 time
+Execute while 5 time
+Execute while 7 time
+
+B.
+Execute while 2 time
+Execute while 4 time
+Execute while 6 time
+Execute while 8 time
+
+C.
+Execute while 1 time
+Execute while 2 time
+Execute while 3 time
+Execute while 4 time
+Execute while 5 time
+Execute while 6 time
+Execute while 7 time
+
+D.
+Execute while 2 time
+Execute while 3 time
+Execute while 4 time
+Execute while 5 time
+
+3. What will be the output of the following C# code?
+
+  static void Main(string[] args)
+        {
+            int n, r;
+            n = 5432;
+            while (n > 0)
+            {
+                r = n % 10;
+                n = n / 10;
+                Console.Write(+r);
+            }
+            Console.ReadLine();
+        }
+c
+A. 3245
+B. 2354
+C. 2345
+D. 5423
+
+
+4. What will be output of following code?
+   int n1=0,n2=1,n3,i,number;    
+         Console.Write("Enter the number of elements: ");    
+         number = 10  
+         Console.Write(n1+" "+n2+" ");    
+         for(i=2;i<number;++i)     
+         {    
+          n3=n1+n2;    
+          Console.Write(n3+" ");    
+          n1=n2;    
+          n2=n3;    
+         }  
+a
+A. 0 1 1 2 3 5 8 13 21 34
+B. 1 1 2 3 5 8 13 21 34 55
+C. 0 1 1 2 4 8 16 32 64 128
+D. 2 3 5 8 13 21 48 34 64 128
+
+5.  What will be the output of the following C# code?
+
+  static void Main(string[] args)
+  {
+      float i = 1.0f,  j = 0.05f;
+      while (i  < 2.0f  &&  j  <= 2.0f)
+      {
+          Console.WriteLine(i++ - ++j);
+      }
+      Console.ReadLine();
+  }
+c
+
+A. 0.05f
+B. 1.50f
+C. -0.04999995f
+D. 1.50f

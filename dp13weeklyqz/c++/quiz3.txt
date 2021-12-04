@@ -1,0 +1,299 @@
+1. What will be the output of the following C++ code?
+
+#include <iostream>
+#include <string>
+using namespace std;
+class A
+{
+	static int a;
+    public:
+	A()
+        {
+		cout<<"Object of A is created\n";
+	}
+	void show()
+        {
+		a++;
+		cout<<"a: "<<a<<endl;
+	}
+};
+ 
+class B
+{
+    public:
+};
+ 
+int main(int argc, char const *argv[])
+{
+	A a1, a2;
+	A a3 = a1 + a2;// intstring + int string
+	return 0;
+}
+
+A) Runs perfectly
+B) Run-time Error
+C) Segmentation fault
+D) Compile-time Error
+----------------------------------------------------------------
+
+2. What will be the output of the following C++ code?
+
+#include <iostream>
+#include <string>
+using namespace std;
+class Box
+{
+	int capacity;
+	Box(){}
+	Box(double capacity){
+		this->capacity = capacity;
+	}
+ 
+};
+ 
+int main(int argc, char const *argv[])
+{
+	Box b1(10);
+	Box b2 = Box(14);
+	return 0;
+}
+
+A) Error
+B) Segmentation fault
+C) 4
+D) No output
+-------------------------------------------------------------------
+
+3. Which of the following is the default mode of the opening using the fstream class?
+A) ios::in
+B) ios::out
+C) ios::in|ios::out
+D) ios::trunc
+-----------------------------------------------------------------
+
+4. What will be the output of the following C++ code?
+class base
+{
+public:
+       base()
+       {          
+           cout<<"BCon";
+       }
+       ~base()
+       {
+	   cout<<"BDest ";
+       }
+};
+class derived: public base
+{
+public:
+       derived()
+       {     cout<<"DCon ";
+       }
+       ~derived()
+       {     cout<<"DDest ";
+       }
+};
+
+int main()
+{
+derived object;
+return 0; 
+}
+A) Dcon DDest
+B) Dcon DDest BCon BDest
+C) BCon DCon DDest BDest
+D) BCon DCon BDes DDest
+------------------------------------------------------------
+
+5. What will be the output of the following C++ code?
+#include<iostream.h>
+
+void Execute(int &x, int y = 200)
+{
+ int TEMP = x + y;
+ x+= TEMP;
+ if(y!=200)
+     cout<<TEMP<<x<<y"--";
+}
+
+int main()
+{
+ int A=50, B=20;
+ cout<<A<<B<<"--";
+ Execute(A,B);
+ cout<<A<<B<<"--";
+ return 0;
+}
+
+A) 5020--5020--
+B) 5020--7012020--12020--
+C) 5020--70120200--5020
+D) 5020--7050200--5020--
+----------------------------------------------------------------
+
+6. What will be the output of the following C++ code?
+int main() 
+{
+int i=0,x=0;
+
+for(i=1;i<10;i*=2)
+{
+    x++;
+    cout<<x;
+}
+cout<<x;
+
+return 0;
+}
+
+A) 1234567899
+B) 12345678910
+C) 123455
+D) 12344
+----------------------------------------------------------------------------
+
+7. What will be the output of the following C++ code?
+
+int main()
+{
+int c1,c2;
+int a = -8;
+int b = 3;
+c1 = --a + b;
+c2 = a-- + b;
+cout<<"c1="<<c1<<", "<<"c2="<<c2<<endl;
+
+return 0;
+}
+
+A) c1=-7,c2=-4
+B) c1=-7,c2=-3
+C) c1=-4,c1=b-3
+D) c1=-6,c2=-6
+------------------------------------------------------------------------------
+
+8. What is the output of the following program?
+
+#include<iostream>
+
+using namespace std;
+void main() {
+   char s[] = "C++";
+   
+	cout<<s<<" ";
+	s++;
+	cout<<s<<" ";
+}
+A) C++ C++
+B) C++ ++
+C) ++ ++
+D) Compile error
+-------------------------------------------------------------------------------
+
+9. What is the output of the following program?
+#include<iostream>
+using namespace std;
+int main(){
+    int x,ind=0,num=1;
+    
+    x=47
+    int arr[x];
+    while(x!=0){
+        arr[ind++]=x%2;
+        x=x/2;
+    }
+    for(int i=ind-1;i>=0;i--){
+        x+=arr[i]*num;
+        num*=2;
+    }
+    cout<<x;
+}
+
+A) 11
+B) 48
+C) 61
+D) 87
+-------------------------------------------------------------------------------
+
+10. What is the output of the following program?
+#include <iostream>
+using namespace std;
+int main(){
+
+    int a,b,c;
+
+    a=5,b=15,c=3;
+
+    if(a+b==c){
+
+        cout << a << "+" << b << "=" << c << endl;
+
+    } else if (a-b == c){
+
+        cout << a << "-" << b << "=" << c << endl;
+
+    } else if (a*b == c){
+
+        cout << a << "*" << b << "=" << c << endl;
+
+    } else if (a/b == c){
+
+        cout << a << "/" << b << "=" << c << endl;
+
+    } else if (a == b+c){
+
+        cout << a << "=" << b << "+" << c << endl;
+
+    } else if (a == b-c){
+
+        cout << a << "=" << b << "-" << c << endl;
+
+    } else if (a == b*c){
+
+        cout << a << "=" << b << "*" << c << endl;
+
+    } else if (a == b/c){
+
+        cout << a << "=" << b << "/" << c << endl;
+
+    }
+
+    return 0;
+
+}
+
+A) 5+3=8
+B) error
+C) 5=15/3
+D) a-b=c
+--------------------------------------------------------------------------------
+
+ Bonus : Write c++ code? 
+                                                     Faktor
+                      
+The impact factor of a scientific journal is a measure reflecting the average number of citations to articles published in science journals. 
+For this task we are using a simplified formula for calculating the impact factor:
+
+Total count of citations received by articles published in the journalTotal number of articles published
+Rounding is always performed upwards. For example the impact factor of the “Journal for ore research and time wasting” 
+that published 38 articles cited 894 times is 894/38=23.53 rounding up to 24.
+
+You are the editor of one scientific journal. You know how many articles you are going to publish and the owners are pushing you to reach 
+a specific impact factor. You are wondering how many scientists you will have to bribe to cite your articles to meet the owners demands. 
+Since money is tight you want to bribe the minimal amount of scientists. Each bribed scientist buys you a single citation.
+
+Input
+First and only line of input will contain 2 integers, A (1≤A≤100), the number of articles you plan to publish and I (1≤I≤100), 
+the impact factor the owners require.
+
+Output
+The first and only line of output should contain one integer, the minimal number of scientists you need to bribe.
+
+Sample Input 1	     Sample Output 1
+38 24                      875
+Sample Input 2	     Sample Output 2
+1 100                      100
+Sample Input 3	     Sample Output 3
+10 10                       91
+

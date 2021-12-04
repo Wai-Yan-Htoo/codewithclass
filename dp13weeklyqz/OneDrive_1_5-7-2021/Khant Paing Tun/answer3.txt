@@ -1,0 +1,22 @@
+1)	b  
+2)	a t
+3)	a
+4)	c  t
+5)	b  t
+6)	d  t
+7)	d  t
+8)	d  t
+9)	c  t	
+10)	c t
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+	int A,I,multi;
+	cin>>A>>I;
+	int s=A-1;
+	multi=A*I;
+	cout<<multi-s;	
+}

@@ -1,0 +1,75 @@
+quiz 3
+1. D
+2. A
+3. C
+4. C
+5. B
+6. D
+7. D
+8. D
+9. C
+10. C
+
+Course      Mon-Thurs/Sat,Sun   Date(DD/MM/YY)       Time                Diploma/or not                    Batch
+c#          (Mon - Thur)         17,June, 2021    (9:30am - 1:00pm)   Software Engineering(UK)      13
+weely assignment
+Multiple Choice total = 5 + kattis solution(write code)
+
+1. zin hein hlaing  10/10
+2. sufia            6/10
+3. razia            7/10
+4. kyaw zin thet    10/10
+5. khant paing      9/10
+6. zin ko ko        9/10
+7. khant lin maung2 7/10
+
+dd
+5. htet aung lwin 6/10
+quiz 2.
+1.   C
+2.   B
+3.   C
+4.   A
+5.   C
+6.   A,D
+7.   C
+8.   C
+9.   C
+10. D
+
+Course      Mon-Thurs/Sat,Sun   Date(DD/MM/YY)       Time                Diploma/or not                    Batch
+c++          (Mon - Thur)         13,May, 2021    (9:30am - 1:00pm)   Software Engineering(UK)      13
+
+1. zin hein hlaing  10/10
+2. sufia  9/10
+3. razia  9/10
+4. kyaw zin thet   9/10
+5. htet aung lwin 6/10
+6. khant paing   9/10
+7. may thwe hinin 7/10
+8. wai min thu 6/10
+
+quiz 1.
+1.b
+2.b
+3.c
+4.b
+5.a
+6.c
+7.b
+8.b
+9.a
+10 .b
+
+
+
+Course      Mon-Thurs/Sat,Sun   Date(DD/MM/YY)       Time                Diploma/or not                    Batch
+c++          (Mon - Thur)         5,May, 2021    (9:30am - 1:00pm)   Software Engineering(UK)      13
+
+1. zin hein hlaing  10/10
+2. sufia  10/10
+3. razia  6/10
+4. kyaw zin thet   10/10
+5. htet aung lwin 7/10
+6. khant paing   2/10
+7. may thwe hinin 4/10

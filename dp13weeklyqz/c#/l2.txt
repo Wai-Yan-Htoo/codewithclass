@@ -1,0 +1,155 @@
+1. What will be the output of the following code snippet?
+using System;
+class sample
+  {
+      int i;
+      double k;
+      public sample (int ii, double kk)
+      {
+          i = ii;     
+          k = kk;   
+          double j = (i) + (k);    
+             
+      }
+      ~sample()
+      {
+          double j = i - k;         
+          Console.WriteLine(j);     
+      }
+  }
+  class Program
+  {
+      static void Main(string[] args)
+      {
+          sample s = new sample(9, 2.5);
+      }
+  }
+D
+
+
+A. 0   
+B. 11.5   
+C. Compile-time error
+D. 6.5
+
+2. What will be the output of the following code snippet?
+using System;
+class program
+{
+   static void Main(string[] args)
+    {
+       int x = 8;
+       int b = 16;
+       int c = 64;
+       x /= c /= b;
+       Console.WriteLine(x + " " + b+ " " +c);
+       Console.ReadLine();
+    }
+}
+
+A
+
+A. 2  16   4
+B. 4   8   16
+C. 2   4    8
+D. 8  16  64
+
+
+3. What will be the output of the following code snippet?
+using System;
+
+class sample
+{
+     public sample()
+     {
+         Console.WriteLine("constructor 1 called");
+     }
+     public sample(int x)
+     {
+         int p = 2;
+         int u;
+         u = p + x;
+         Console.WriteLine("constructor 2 called");
+     }
+}
+class Program
+{
+     static void Main(string[] args)
+     {
+         sample s = new sample(4);
+         sample t = new sample();
+         Console.ReadLine();
+     }
+}
+
+B
+
+A. 
+constructor 1 called
+constructor 2 called
+B. 
+constructor 2 called
+constructor 1 called
+C. 
+constructor 2 called
+constructor 2 called
+D. 
+error
+
+4. Which of the following statements is correct about the C#.NET program given below?
+
+using System;
+namespace IndiabixConsoleApplication
+{
+    class MyProgram
+    {
+        static void Main(string[] args)
+        {
+            int index = 6;
+            int val = 44;
+            int[] a = new int[5];
+            try
+            {
+                a[index] = val ;
+            }    
+            catch(IndexOutOfRangeException e)
+            {
+                Console.Write("Index out of bounds ");
+            }
+            Console.Write("Remaining program");
+        }
+    }
+}
+
+D
+
+A.  Index out of bounds
+B.  Remaining program
+C.  It will not produce any output.
+D.  Index out of bounds Remaining program
+
+5. What will be the output of the following C# code?
+
+     public struct abc
+    {
+        public int i;
+    }
+
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            abc x = new abc();
+            abc z;
+            x.i = 10;
+            z = x;
+            z.i = 15;
+            Console.WriteLine(x.i + "  " + z.i);
+         }
+    }
+
+A. 10 10
+B. 10 15
+C. 15 15
+D. 15 10

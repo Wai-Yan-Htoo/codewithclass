@@ -1,0 +1,7 @@
+C:\Users\DELL\Desktop\dp13weeklyqz\c#\l3ans\answer\bin\Debug\answer.exe.config
+C:\Users\DELL\Desktop\dp13weeklyqz\c#\l3ans\answer\bin\Debug\answer.exe
+C:\Users\DELL\Desktop\dp13weeklyqz\c#\l3ans\answer\bin\Debug\answer.pdb
+C:\Users\DELL\Desktop\dp13weeklyqz\c#\l3ans\answer\obj\Debug\answer.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\dp13weeklyqz\c#\l3ans\answer\obj\Debug\answer.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\dp13weeklyqz\c#\l3ans\answer\obj\Debug\answer.exe
+C:\Users\DELL\Desktop\dp13weeklyqz\c#\l3ans\answer\obj\Debug\answer.pdb

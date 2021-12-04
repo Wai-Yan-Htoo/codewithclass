@@ -1,0 +1,130 @@
+1. Default function has ______ arguments?
+A. One Argument
+B. Two Argument
+C. No Argument
+D. None of these
+ANSWER:C
+
+2. In CPP, members of a class are _____by default?
+A. Static
+B. Private
+C. Public
+D. Protected
+ANSWER:B
+
+3. Which one of the following is a keyword?
+A. Size
+B. Key
+C. Switch
+D. Jump
+ANSWER:C
+
+4. The dot operator connects which of the following two entities?
+A. Class object and member of that class
+B. Class and member of that class
+C. Class object and a class
+D. Class member and class object
+ANSWER:A
+
+5. In c++, a function contained within a class is called?
+A. A method
+B. A class function
+C. Member function
+D. None of these
+ANSWER:C
+
+6. Which of the following correctly declares an array?
+A. int array[]= {1,2,3};
+B. int array;
+C. int array{10};
+D. int array[10];
+ANSWER:A
+
+7. What is the index number of the last element of an array with 9 elements?
+A. 10
+B. 0
+C. 8
+D. Programmer-defined
+ANSWER:C
+
+8. Which of the following is an enter - controlled loop in c++?
+A. foreach     
+B. while 
+C. do-while          
+D. all of the mentioned
+ANSWER:B
+
+/*
+ 8.What will be the output of the following c++ code?
+#include<iostream>
+using namespace std;
+int main(){
+
+int arr1[]={1200,200,2300,1230,1543};
+
+int arr2[]={12,14,16,18,20};
+int temp,result=0;
+
+for(temp = 0 ; temp < 5 ; temp++){
+         result+ = arr1[temp];
+}
+
+
+for(temp = 0 ; temp < 4 ; temp++){
+         result+ = arr2[temp];
+}
+
+
+
+cout<<result;
+}
+A. 6553
+B. 6522
+C. 6533
+D. 12200
+
+9.What will be the output of the following c++ code?
+#include<iostream>
+using namespace std;
+int main(){
+     int array[]={0,2,4,6,7,5,3};
+     int n, result=0;
+     for(n = 0 ; n < 8 ; n++){
+         result+= array[n];
+    }
+    cout<<result;
+}
+
+A. 25
+B. 26
+C. 27
+D. 21
+
+10. What will be the output of the following c++ code?
+      #include<iostream>
+      using namespace std;
+      int main(){
+      int a=5,b=10,c=15;
+
+  //comment  0,  1  ,2
+
+  int arr[3]={&a,&b,&c};
+
+  cout<<*arr[*arr[1]-8]        //comment arr[10-8]=arr[2]
+
+}
+A. 15 
+B. 18
+C. garbage value
+D. compile time error
+
+ */
+
+
+
+
+
+
+
+
+

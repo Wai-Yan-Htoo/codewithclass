@@ -1,0 +1,24 @@
+20.5.2021
+
+1.  (D)   t
+2.  (A)    t
+3.  (C)    t
+4.  (C)   t
+5.  (B)  t
+6.  (D)  t
+7.  (D)  t
+8.  (D) t
+9.  (C) t
+10. (C) t
+
+Bonous:
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int num1, num2;
+    cin >> num1 >> num2;
+    int ans = num1 * (num2-1);
+    cout << ans + 1 << endl;
+}

@@ -1,0 +1,197 @@
+1. What will be the output of the following C++ code?
+
+#include <iostream> 
+#include <string>
+using namespace std; 
+int main(int argc, char const *argv[])
+{
+	char s1[6] = "Hello";
+	char s2[6] = "World";
+	char s3[12] = s1 + " " + s2;
+	cout<<s3;
+	return 0;
+}
+
+a) Hello
+b) World
+c) Error
+d) Hello World
+
+Answer: c
+Explanation: There is no operation defined for
+ the addition of character array in C++ hence 
+the compiler throws an error as it does not understoods 
+what to do about this expression.
+
+2. What is the value of p in the following C++ code snippet?
+
+    #include <iostream>
+    using namespace std;
+    int main()
+    {
+        int p;
+        bool a = true;
+        bool b = false;
+        int x = 10;
+        int y = 5;
+        p = ((x | y) + (a + b));
+        cout << p;
+        return 0;
+    }
+
+a) 12
+b) 0
+c) 2
+d) 16
+
+Answer: d
+Explanation: | means bitwise OR operation so x | y (0101 | 1010) 
+will be evaluated to 1111 which is integer 15 and as a is true 
+and b is false so a+b(1 + 0) = 1. So final value of expression in 
+line #10 will be 15 + 1 = 16.
+
+3. What will be the output of the following C++ code snippet?
+
+    #include <iostream>
+    using namespace std;
+    int operate (int a, int b)
+    {
+        return (a * b);
+    }
+    float operate (float a, float b)
+    {
+        return (a / b);
+    }
+    int main()
+    {
+        int x = 5, y = 2;
+        float n = 5.0, m = 2.0;
+        cout << operate(x, y) <<"\t";
+        cout << operate (n, m);
+        return 0;
+    }
+
+a) 10.0		5
+b) 10		2.5
+c) 10.0		5.0
+d) 5.0		2.5
+
+Answer: b
+Explanation: In this program, we are divide and multiply the values.
+Output:
+$ g++ over3.cpp
+$ a.out
+10	2.5
+
+4. What will be the output of the following C++ program?
+
+#include <iostream>
+using namespace std;
+class A{
+public:
+	A(){
+		cout<<"Constructor called\n";
+	   }
+	~A(){
+		cout<<"Destructor called\n";
+	    } 
+};
+int main(int argc, char const *argv[])
+{
+	A *a = new A[5];
+	return 0;
+}
+
+a) “Constructor called” once and then “Destructor called” once.
+b) “Constructor called” five times
+c) “Constructor called” five times and then “Destructor called” five times.
+d) Error
+
+Answer: b
+
+Explanation: In the above program we have first initiated five-pointer 
+variables using new keyword hence fives time constructor will be called 
+after that as we using delete[] (used for deleting multiple objects) 
+to delete variables hence all the five objects created will be destroyed 
+and hence five times destructor will be called.
+
+5. What will be the output of the following C++ code?
+
+    #include <iostream>
+    using namespace std;
+    class stu
+    {
+        protected:
+        int rno;
+        public:
+        void get_no(int a)
+        {
+            rno = a;
+        }
+        void put_no(void)
+        {
+        }
+    };
+    class test:public stu
+    {
+        protected:
+        float part1,part2;
+        public:
+        void get_mark(float x, float y)
+        {
+            part1 = x;
+            part2 = y;
+        }
+        void put_marks()
+        {
+        }
+    };
+    class sports
+    {
+        protected:
+        float score;
+        public:
+        void getscore(float s)
+        {
+            score = s;
+        }
+        void putscore(void)
+        {
+        }
+    };
+    class result: public test, public sports
+    {
+        float total;
+        public:
+        void display(void);
+    };
+    void result::display(void)
+    {
+        total = part1 + part2 + score;
+        put_no();
+        put_marks();
+        putscore();
+        cout << "Total Score=" << total << "\n";
+    }
+    int main()
+    {
+        result stu;
+        stu.get_no(123);
+        stu.get_mark(27.5, 33.0);
+        stu.getscore(6.0);
+        stu.display();
+        return 0;
+    }
+a) 66.5
+b) 64.5
+c) 62.5
+d) 60.5
+
+
+Answer: a
+Explanation: In this program, We are passing the values by 
+using different methods and totaling the marks to get the result.
+Output:
+$ g++ class.cpp
+$ a.out
+Total Score=66.5

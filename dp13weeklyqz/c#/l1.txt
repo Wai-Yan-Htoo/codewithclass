@@ -1,0 +1,156 @@
+What will be the output of the following C# code________.
+ static void Main(string[] args)
+ {
+     int i;
+     int b = 8, a = 32;        
+     for (i = 0; i <= 10; i++)    
+     {
+         if ((a / b * 2)== 2)      
+         {
+             Console.WriteLine( i + " ");
+             continue;
+         }
+         else if (i != 4)          
+             Console.Write(i + " ");   
+         else
+             break;
+    }
+    Console.ReadLine();
+ }
+(a) 1 2 3 4 5 6 7 8 9 
+(b) 0 1 2 3 4 5 6 7 8 
+(c) 0 1 2 3 
+(d) 0 1 2 3 4
+Answer : (c)
+
+What will be the output of the following C# code_______.
+
+  static void Main(string[] args)
+  {
+      int i, j;
+      for (i = 2; i >= 0; i--) 
+      {
+          for (j = 0; j <= 2; j++)
+          {
+              if (i == j)
+              {
+                  Console.WriteLine("1");
+              }
+              else
+              {
+                  Console.WriteLine("0");     
+              }                               
+         }                                    
+         Console.WriteLine("\n");                
+         Console.ReadLine();                  
+      }                                       
+  }                                           
+(a)                                                                                       
+1 0 0                                      
+0 1 0                                      
+0 0 1
+
+(b)
+0 1 0
+1 0 0
+0 0 1
+
+(c)
+0 0 1                    
+0 1 0
+1 0 0
+
+(d)
+1 0 0   
+0 0 1   
+0 1 0
+Answer : (c)
+
+What will be the output of the following C# code_______.
+
+ static void Main(string[] args)
+ {
+     int a = 15, b = 10, c = 1;
+     if (Convert.ToBoolean(a) && (b > c))
+     {
+         Console.WriteLine("cquestionbank");
+     }
+     else
+     {
+         break;
+     }
+ }
+
+(a) cquestionbank 
+(b) It will print nothing 
+(c) Build error 
+(d) Run time error
+Answer : (c)
+
+What will be the output of the following C# code______.
+
+  static void Main(string[] args)
+  {                                      
+      int movie = 1;
+                  
+      switch (movie << 2 + movie)
+      {
+      default: 
+          Console.WriteLine("3 Idiots");
+          break;
+      case 4: 
+          Console.WriteLine("Ghazini");
+          break;
+      case 5: 
+          Console.WriteLine("Krishh");
+          break;
+      case 8: 
+          Console.WriteLine("Race");
+          break;
+      }
+      Console.ReadLine();
+  }
+(a) 3 Idiots 
+(b) Ghazini 
+(c) Race 
+(d) Krishh
+Answer : (c)
+
+
+What will be the output of the following C# code______.
+
+ static void Main(string[] args)
+ {
+     int i, j;
+     for (i = 1; i <= 3; i++)
+     {
+         j = 1;
+         while (i % j == 2)
+         {
+             j++;
+         }
+         Console.WriteLine($"{i}{j}");
+     }                                   
+     Console.ReadLine();                
+ }
+
+(a) 
+11 
+21     
+31 
+
+(b) 
+1 
+12     
+13      
+1 
+
+(c) 
+11 21 31 
+
+(d) 
+1 1 
+2 1 
+3 1 
+Answer : (a)
+

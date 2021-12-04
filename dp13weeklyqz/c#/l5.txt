@@ -1,0 +1,277 @@
+1.
+You enjoy your new job as a teacher of young children. 
+ It’s fun to see them learning to count, recognize letters, 
+ draw, and interact with the world.
+ One common problem you’ve noticed is that children often forget 
+ numbers when counting. For example, early on they might count “one,
+ two, three, five, six.” You have to remind them about that “four” 
+ that they didn’t say. And as they get more proficient and clever, 
+ they may use the “quick” way of counting: “one, two, skip a few, 
+ ninety-nine, one hundred!”Please write a program that can help you 
+ (and your students) identify the missing numbers when 
+ they are counting.
+
+ Input
+ The first line of input contains a single integer n, 
+ where 1≤n≤100. Each of the next n lines contains one number 
+ that the child recited. Each recited number is an integer 
+ between 1 and 200 (inclusive). They are listed in increasing order,
+ and there are no duplicates.
+
+ Output
+ If the child recited all the numbers between 1 and the last number
+ they recited, then print good job.
+ If the child missed any numbers between 1 and the last number 
+ they recited, then print those missing numbers in increasing 
+ numeric order, one per line.
+
+Sample Input 1		Sample Output 1
+
+9			1
+2			3
+4			6
+5			12
+7
+8
+9
+10
+11
+13
+
+Sample Input 2		Sample Output 2
+
+5			good job
+1
+2
+3
+4
+5
+
+2. 
+You are the CEO of Nasty Hacks Inc., a company that creates small pieces of malicious software which teenagers may use to fool their friends. The company has just finished their first product and it is time to sell it. You want to make as much money as possible and consider advertising in order to increase sales. You get an analyst to predict the expected revenue, both with and without advertising. You now want to make a decision as to whether you should advertise or not, given the expected revenues.
+Input
+The input consists of n cases, and the first line consists of one positive integer giving n. The next n lines each contain 3 integers, r, e and c. The first, r, is the expected revenue if you do not advertise, the second, e, is the expected revenue if you do advertise, and the third, c, is the cost of advertising. You can assume that the input will follow these restrictions: 1≤n≤100, −106≤r,e≤106 and 0≤c≤106.
+
+Output
+Output one line for each test case: “advertise”, “do not advertise” or “does not matter”, indicating whether it is most profitable to advertise or not, or whether it does not make any difference.
+
+Sample Input 1		Sample Output 1
+3			advertise
+0 100 70		does not matter
+100 130 30		do not advertise
+-100 -70 40
+
+3.
+The teacher has sent an e-mail to her students with the following task: “Write a program that will determine and output the value of X if given the statement:
+
+X=numberpow11+numberpow22+…+numberpowNN
+and it holds that number1, number2 to numberN are integers, and pow1, pow2 to powN are one-digit integers.” Unfortunately, when the teacher downloaded the task to her computer, the text formatting was lost so the task transformed into a sum of N integers:
+
+X=P1+P2+…+PN
+For example, without text formatting, the original task in the form of X=212+1253 became a task in the form of X=212+1253. Help the teacher by writing a program that will, for given N integers from P1 to PN determine and output the value of X from the original task.
+
+Input
+The first line of input contains the integer N (1≤N≤10), the number of the addends from the task. Each of the following N lines contains the integer Pi (10≤Pi≤9999, i=1,…,N) from the task.
+
+Output
+The first and only line of output must contain the value of X (X≤1000000000) from the original task.
+
+Sample Input 1		Sample Output 1
+2			1953566
+212
+1253
+
+Sample Input 2		Sample Output 2
+5			102
+23
+17
+43
+52
+22
+
+Sample Input 3		Sample Output 3
+3			10385
+213
+102
+45
+
+4.
+Young Mirko threw matches all over the floor of his room.
+
+His mom did not like that and ordered him to put all the matches in a box. Mirko soon noticed that not all of the matches on the floor fit in the box, so he decided to take the matches that don’t fit and throw them in the neighbour’s garbage, where his mom (hopefully) won’t find them.
+
+Help Mirko determine which of the matches fit in the box his mom gave him. A match fits in the box if its entire length can lie on the bottom of the box. Mirko examines the matches one by one.
+
+Input
+The first line of input contains an integer N (1≤N≤50), the number of matches on the floor, and two integers W and H, the dimensions of the box (1≤W≤100, 1≤H≤100).
+
+Each of the following N lines contains a single integer between 1 and 1000 (inclusive), the length of one match.
+
+Output
+For each match, in the order they were given in the input, output on a separate line “DA” if the match fits in the box or “NE” if it does not.
+
+Sample Input 1		Sample Output 1
+5 3 4			DA
+3			DA
+4			DA
+5			NE
+6			NE
+7
+
+Sample Input 2		Sample Output 2
+2 12 17			NE
+21			DA
+20
+
+5.
+Write a program that, given a date in 2009, determines the day of week on that date.
+
+Input
+The first line contains two positive integers D (day) and M (month) separated by a space. The numbers will be a valid date in 2009.
+
+Output
+Output the day of the week on day D of month M in 2009. The output should be one of the words “Monday”, “Tuesday”, “Wednesday”, “Thursday”, “Friday”, “Saturday” or “Sunday”.
+
+Sample Input 1		Sample Output 1
+1 1			Thursday
+
+Sample Input 2		Sample Output 2
+17 1			Saturday
+
+Sample Input 3		Sample Output 3
+25 9			Friday
+
+6.
+The impossible has happened. Bear G. has fallen into his own trap. Lured by a delicious box of Domaćica, without even thinking, he rushed and fell into his trap. In order to get out of the trap, he must solve the following task with your help. You are given three integers L, D and X.
+
+determine the minimal integer N such that L≤N≤D and the sum of its digits is X
+
+determine the maximal integer M such that L≤M≤D and the sum of its digits is X
+
+Bear will be able to escape from the trap if he correctly determines numbers N and M. The numbers N and M will always exist.
+
+Input
+The first line of input contains the integer L (1≤L≤10000), the number from the task. The second line of input contains the integer D (1≤D≤10000, L≤D), the number from the task. The third line of input contains the integer X (1≤X≤36), the number from the task.
+
+Output
+The first line of output must contain the integer N from the task. The second line of output must contain the integer M from the task.
+
+Sample Input 1		Sample Output 1
+1			4
+100			40		
+4
+
+Sample Input 2		Sample Output 2
+100			129
+500			480
+12
+
+Sample Input 3		Sample Output 3
+1			1
+10000			10000
+1
+
+7.
+Alice travels a lot for her work. Each time she travels, she visits a single city before returning home.
+Someone recently asked her “how many different cities have you visited for work?” Thankfully Alice has kept a log of her trips. Help Alice figure out the number of cities she has visited at least once.
+
+Input
+The first line of input contains a single positive integer T≤50 indicating the number of test cases. The first line of each test case also contains a single positive integer n indicating the number of work trips Alice has taken so far. The following n lines describe these trips. The ith such line simply contains the name of the city Alice visited on her ith trip.
+
+Alice’s work only sends her to cities with simple names: city names only contain lowercase letters, have at least one letter, and do not contain spaces.
+
+The number of trips is at most 100 and no city name contains more than 20 characters.
+
+Output
+For each test case, simply output a single line containing a single integer that is the number of distinct cities that Alice has visited on her work trips.
+
+Sample Input 1		Sample Output 1
+2			4
+7			1
+saskatoon
+toronto
+winnipeg
+toronto
+vancouver
+saskatoon
+toronto
+3
+edmonton
+edmonton
+edmonton
+
+8.
+Ms. Greene is trying to design a game for her third-grade class to practice their addition, subtraction, multiplication, and division. She would like for every student in her class to be able to “think mathematically” and determine if any two given numbers can be added, subtracted, multiplied, or divided in any way to produce a third given number. However, she would like to be able to check her students’ work quickly without having to think about it herself.
+
+Help Ms. Greene by writing a program that inputs two given numbers and determines whether or not it is possible to add, subtract, multiply, or divide those two numbers in any order to produce the third number. Only one operation may be used to produce the third number.
+
+Input
+Each input file will start with a single integer N (1≤N≤10000) denoting the number of test cases. The following N lines will contain sets of 3 numbers a,b,c (1≤a,b,c≤10000).
+
+Output
+For each test case, determine whether or not it is possible to produce the third number, c, using the first two numbers, a and b, using addition, subtraction, multiplication, or division.
+
+Sample Input 1		Sample Output 1
+6			Possible
+1 2 3			Possible
+2 24 12			Impossible
+5 3 1			Possible
+9 16 7			Possible
+7 2 14			Impossible
+12 4 2
+
+9.
+There is a game in which you try not to repeat a word while your opponent tries to see if you have repeated one.
+
+"THE RAIN IN SPAIN" has no repeats.
+
+"IN THE RAIN AND THE SNOW" repeats THE.
+
+"THE RAIN IN SPAIN IN THE PLAIN" repeats THE and IN.
+
+Write a program to test a phrase.
+
+Input
+Input is a line containing words separated by single spaces, where a word consists of one or more uppercase letters. A line contains no more than 80 characters.
+
+Output
+The output is "yes" if no word is repeated, and "no" if one or more words repeat.
+
+Sample Input 1				Sample Output 1
+THE RAIN IN SPAIN			yes
+
+Sample Input 2				Sample Output 2
+IN THE RAIN AND THE SNOW		no
+
+Sample Input 3				Sample Output 3
+THE RAIN IN SPAIN IN THE PLAIN		no
+
+10.
+A known problem with some microphones is the “hissing s”. That is, sometimes the sound of the letter s is particularly pronounced; it stands out from the rest of the word in an unpleasant way.
+
+Of particular annoyance are words that contain the letter s twice in a row. Words like amiss, kiss, mississippi and even hiss itself.
+
+Input
+The input contains a single string on a single line. This string consists of only lowercase letters (no spaces) and has between 1 and 30 characters.
+
+Output
+Output a single line. If the input string contains two consecutive occurrences of the letter s, then output hiss. Otherwise, output no hiss.
+
+Sample Input 1		Sample Output 1
+amiss			hiss
+
+Sample Input 2		Sample Output 2
+octopuses		no hiss
+
+Sample Input 3		Sample Output 3
+hiss			hiss
+
+
+
+
+
+
+
+
+
+

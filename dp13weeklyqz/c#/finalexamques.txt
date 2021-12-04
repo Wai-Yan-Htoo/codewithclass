@@ -1,0 +1,735 @@
+A. Answer all Multiple Choice Question.
+
+1. Predict the output for the given set of code correctly.
+
+static void Main(string[] args)
+  {
+      int b= 11;
+      int c = 7;
+      int r = 5;
+      int e = 2;
+      int l;
+      int v = 109;
+      int k;
+      int z,t,p;
+      z = b * c;
+      t = b * b;
+      p = b * r * 2;
+      l = (b * c) + (r * e) + 10;
+      k = v - 8;
+      Console.WriteLine(Convert.ToString(Convert.ToChar(z)) + " " + Convert.ToString(Convert.ToChar(t)) + Convert.ToString(Convert.ToChar(p)) +   Convert.ToString(Convert.ToChar(l)) + Convert.ToString(Convert.ToChar(v)) + Convert.ToString(Convert.ToChar(k)));                
+      Console.ReadLine();
+  }
+
+A. MyName
+B. MynAme
+C. Myname
+D. Myname
+-------------------------------------------------------
+
+2. Select the relevant code set to fill up the blank for the following program :
+
+static void Main(string[] args)
+  {
+      int x = 10, y = 20;
+      int res;
+      /*_______________*/ 
+      Console.WriteLine(res);
+  }
+
+A. x % y == 0 ? (x == y ? (x += 2):(y = x + y)):y = y*10;
+B. x % y == 0 ? y += 10:(x += 10);
+C. x % y == 0 ? return(x) : return (y);
+D. All of the mentioned.
+------------------------------------------------------------
+
+3. What will be output of the following code
+
+static void Main(string[] args)
+  {
+      string legendary_sannin = "jiraiya";
+      string clone = "kashin koji";
+      Console.WriteLine(string.Compare(legendary_sannin,clone));
+  }
+
+A. -1
+B.  0
+C.  1
+D.  length_of_first_string
+---------------------------------------------------------------
+
+4. What will be the output of the following C# code.
+
+ static void Main(string[] args)
+ {
+     int i, j;
+     for (i = 1; i <= 3; i++)
+     {
+         j = 1;
+         while (i % j == 2)
+         {
+             j++;
+         }
+         Console.WriteLine($"{i}{j}");
+     }                                   
+     Console.ReadLine();                
+ }
+
+A. 11 
+   21     
+   31 
+
+B. 1 
+   12     
+   13      
+   1 
+
+C. 11 21 31 
+
+D. 1 1 
+   2 1 
+   3 1
+--------------------------------------------------------------- 
+
+5. What will be the output of the following code snippet?
+using System;
+class sample
+  {
+      int i;
+      double k;
+      public sample (int ii, double kk)
+      {
+          i = ii;     
+          k = kk;   
+          double j = (i) + (k);    
+             
+      }
+      ~sample()
+      {
+          double j = i - k;         
+          Console.WriteLine(j);     
+      }
+  }
+  class Program
+  {
+      static void Main(string[] args)
+      {
+          sample s = new sample(9, 2.5);
+      }
+  }
+
+A. 0   
+B. 11.5   
+C. Compile-time error
+D. 6.5
+-------------------------------------------------------------
+
+6. What will be the output of the following code snippet?
+using System;
+class program
+{
+   static void Main(string[] args)
+    {
+       int x = 8;
+       int b = 16;
+       int c = 64;
+       x /= c /= b;
+       Console.WriteLine(x + " " + b+ " " +c);
+       Console.ReadLine();
+    }
+}
+
+A. 2  16   4
+B. 4   8   16
+C. 2   4    8
+D. 8  16  64
+------------------------------------------------------------
+
+7. What will be the output of the following code snippet?
+using System;
+
+class sample
+{
+     public sample()
+     {
+         Console.WriteLine("constructor 1 called");
+     }
+     public sample(int x)
+     {
+         int p = 2;
+         int u;
+         u = p + x;
+         Console.WriteLine("constructor 2 called");
+     }
+}
+class Program
+{
+     static void Main(string[] args)
+     {
+         sample s = new sample(4);
+         sample t = new sample();
+         Console.ReadLine();
+     }
+}
+
+A. 
+constructor 1 called
+constructor 2 called
+
+B. 
+constructor 2 called
+constructor 1 called
+
+C. 
+constructor 2 called
+constructor 2 called
+
+D. error
+--------------------------------------------------------------
+8. Which of the following statements is correct about the C#.NET program given below?
+
+using System;
+namespace IndiabixConsoleApplication
+{
+    class MyProgram
+    {
+        static void Main(string[] args)
+        {
+            int index = 6;
+            int val = 44;
+            int[] a = new int[5];
+            try
+            {
+                a[index] = val ;
+            }    
+            catch(IndexOutOfRangeException e)
+            {
+                Console.Write("Index out of bounds ");
+            }
+            Console.Write("Remaining program");
+        }
+    }
+}
+
+A.  Index out of bounds
+B.  Remaining program
+C.  It will not produce any output.
+D.  Index out of bounds Remaining program
+------------------------------------------------------------
+
+9. What will be the output of the following C# code?
+
+     public struct abc
+    {
+        public int i;
+    }
+
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            abc x = new abc();
+            abc z;
+            x.i = 10;
+            z = x;
+            z.i = 15;
+            Console.WriteLine(x.i + "  " + z.i);
+         }
+    }
+
+A. 10 10
+B. 10 15
+C. 15 15
+D. 15 10
+--------------------------------------------------------------
+
+10. The following C# function “rev_str” takes a string argument and 
+   returns the reversed version of that string. Complete the function.
+   string rev_str(string s) {
+      string rs = "";
+      for (int i = 0; i < s.Length; i++) {
+             (fill your code)     
+      }
+    return rs;
+   }
+
+A. rs = s[i] + rs;
+B. s = s[i] + rs;
+C. rs = rs + s[i];
+D. s = rs + s[i];
+--------------------------------------------------------
+
+11. What will be the output of the following C# code?
+
+ static void Main(string[] args)
+ {
+     int x;
+     x = 8;
+     int c = 1;
+     while (c <= x)
+     {
+         if (c % 2 == 0)
+         {
+             Console.WriteLine("Execute While " + c + "\t" + "time");
+         }
+         c++;
+     }
+     Console.ReadLine();
+ }
+
+A.
+Execute while 1 time
+Execute while 3 time
+Execute while 5 time
+Execute while 7 time
+
+B.
+Execute while 2 time
+Execute while 4 time
+Execute while 6 time
+Execute while 8 time
+
+C.
+Execute while 1 time
+Execute while 2 time
+Execute while 3 time
+Execute while 4 time
+Execute while 5 time
+Execute while 6 time
+Execute while 7 time
+
+D.
+Execute while 2 time
+Execute while 3 time
+Execute while 4 time
+Execute while 5 time
+-------------------------------------------------------
+
+12. What will be the output of the following C# code?
+
+  static void Main(string[] args)
+        {
+            int n, r;
+            n = 5432;
+            while (n > 0)
+            {
+                r = n % 10;
+                n = n / 10;
+                Console.Write(+r);
+            }
+            Console.ReadLine();
+        }
+
+A. 3245
+B. 2354
+C. 2345
+D. 5423
+--------------------------------------------------------------
+
+13. What will be output of following code?
+   int n1=0,n2=1,n3,i,number;    
+         Console.Write("Enter the number of elements: ");    
+         number = 10  
+         Console.Write(n1+" "+n2+" ");    
+         for(i=2;i<number;++i)     
+         {    
+          n3=n1+n2;    
+          Console.Write(n3+" ");    
+          n1=n2;    
+          n2=n3;    
+         }  
+
+A. 0 1 1 2 3 5 8 13 21 34
+B. 1 1 2 3 5 8 13 21 34 55
+C. 0 1 1 2 4 8 16 32 64 128
+D. 2 3 5 8 13 21 48 34 64 128
+--------------------------------------------------------
+
+14.  What will be the output of the following C# code?
+
+  static void Main(string[] args)
+  {
+      float i = 1.0f,  j = 0.05f;
+      while (i  < 2.0f  &&  j  <= 2.0f)
+      {
+          Console.WriteLine(i++ - ++j);
+      }
+      Console.ReadLine();
+  }
+
+A. 0.05f
+B. 1.50f
+C. -0.04999995f
+D. 1.50f
+---------------------------------------------------------------
+
+15. What will be the output of the following C# code?
+
+ class program
+ {
+     static void Main(string[] args)
+     {
+         int i = 5;
+         int v = 40;
+         int[] p = new int[4];
+         try
+         {
+             p[i] = v;
+         }
+         catch(IndexOutOfRangeException e)
+         {
+             Console.WriteLine("Index out of bounds");
+         }
+         Console.WriteLine("Remaining program");
+     }
+ }
+
+A. value 40 will be assigned to a[5];
+
+B.
+The output will be :
+Index out of bounds
+Remaining program
+
+C.
+The output will be :
+Remaining program
+
+D. None of the mentioned
+---------------------------------------------------------------
+
+16. What will be the output of the following C# code?
+
+ static void Main(string[] args)
+ {            
+     try 
+     {
+         Console.WriteLine("csharp" + " " + 1/Convert.ToInt32(0));
+     }
+     catch(ArithmeticException e) 
+     {
+         Console.WriteLine("Java");        	
+     }
+     Console.ReadLine();
+ }
+
+A. csharp
+B. java
+C. run time error
+D. csharp 0
+---------------------------------------------------------------
+
+17. What will be the output of the following C# code?
+
+  {
+      int sum = 10;
+      try
+      {
+          int i;
+          for (i = -1; i < 3; ++i)
+          sum = (sum / i);
+      }
+      catch (ArithmeticException e)
+      {
+          Console.WriteLine("0");
+      }
+      Console.WriteLine(sum);
+      Console.ReadLine();
+  }
+
+A. 0
+B. 0 5
+C. 0 -10
+D. Compile time error
+--------------------------------------------------------------
+
+18. What will be the output of the following C# code?
+
+{
+    try 
+    {
+        int []a = {1, 2, 3, 4, 5};
+        for (int i = 0; i < 5; ++i) 
+        Console.WriteLine(a[i]);
+        int x = (1 / Convert.ToInt32(0));
+    }
+    catch(IndexOutOfRangeException e) 
+    {
+        Console.WriteLine("A");        	
+    }
+    catch(ArithmeticException e) 
+    {     	
+        Console.WriteLine("B");
+    }
+    Console.ReadLine();
+}
+
+A. 1234
+B. 12345
+C. Run time error
+D. 12345B
+--------------------------------------------------------------
+
+19. What will be the output of the following C# code?
+
+{
+    try 
+    {
+        int []a = {1, 2, 3, 4, 5};
+        for (int i = 0; i < 7; ++i) 
+        Console.WriteLine(a[i]);
+    }
+    catch(IndexOutOfRangeException e) 
+    {
+        Console.WriteLine("0");        	
+    }
+    Console.ReadLine();
+}
+
+A. 12345
+B. 123450
+C. 1234500
+D. Compile time error
+-------------------------------------------------------------
+
+20. What will be the output of the following C# code_______.
+
+ static void Main(string[] args)
+ {
+     int a = 15, b = 10, c = 1;
+     if (Convert.ToBoolean(a) && (b > c))
+     {
+         Console.WriteLine("cquestionbank");
+     }
+     else
+     {
+         break;
+     }
+ }
+
+A. cquestionbank 
+B. It will print nothing 
+C. Build error 
+D. Run time error
+
+---------------------------------------------------------------
+B.
+I. 
+Every school morning Mirko is woken up by the sound of his alarm clock. Since he is a bit forgetful, quite often he leaves the alarm on on Saturday morning too. That’s not too bad though, since he feels good when he realizes he doesn’t have to get up from his warm and cozy bed.
+He likes that so much that he would like to experience that on other days of the week too! His friend Slavko offered this simple solution: set his alarm clock 45 minutes early, and he can enjoy the comfort of his bed, fully awake, for 45 minutes each day.
+Mirko decided to heed his advice, however his alarm clock uses 24-hour notation and he has issues with adjusting the time. Help Mirko and write a program that will take one time stamp, in 24-hour notation, and print out a new time stamp, 45 minutes earlier, also in 24-hour notation.
+If you are unfamiliar with 24-hour time notation yourself, you might be interested to know it starts with 0:00 (midnight) and ends with 23:59 (one minute before midnight).
+
+Input
+The first and only line of input will contain exactly two integers H and M (0≤H≤23,0≤M≤59) separated by a single space, the input time in 24-hour notation. H denotes hours and M minutes.
+
+Output
+The first and only line of output should contain exactly two integers, the time 45 minutes before input time.
+
+Sample Input 1		Sample Output 1
+10 10			9 25			
+Sample Input 2		Sample Output 2
+0 30			23 45			
+Sample Input 3		Sample Output 3
+23 40			22 55
+
+
+
+II. Digital root is the recursive sum of all the digits in a number.
+Given n, take the sum of the digits of n. If that value has more than one digit, 
+continue reducing in this way until a single-digit number is produced. 
+The input will be a non-negative integer.
+
+Examples
+Sample Input 1		Sample Output 1
+    16 			7
+   942  		6
+132189  		6
+493193  		2
+
+
+
+III. Every school morning Mirko is woken up by the sound of his alarm clock. Since he is a bit forgetful, quite often he leaves the alarm on on Saturday morning too. That’s not too bad though, since he feels good when he realizes he doesn’t have to get up from his warm and cozy bed.
+He likes that so much that he would like to experience that on other days of the week too! His friend Slavko offered this simple solution: set his alarm clock 45 minutes early, and he can enjoy the comfort of his bed, fully awake, for 45 minutes each day.
+Mirko decided to heed his advice, however his alarm clock uses 24-hour notation and he has issues with adjusting the time. Help Mirko and write a program that will take one time stamp, in 24-hour notation, and print out a new time stamp, 45 minutes earlier, also in 24-hour notation.
+If you are unfamiliar with 24-hour time notation yourself, you might be interested to know it starts with 0:00 (midnight) and ends with 23:59 (one minute before midnight).
+
+Input
+The first and only line of input will contain exactly two integers H and M (0≤H≤23,0≤M≤59) separated by a single space, the input time in 24-hour notation. H denotes hours and M minutes.
+
+Output
+The first and only line of output should contain exactly two integers, the time 45 minutes before input time.
+
+Sample Input 1		Sample Output 1
+10 10			9 25
+
+Sample Input 2		Sample Output 2
+0 30			23 45
+
+Sample Input 3		Sample Output 3
+23 40			22 55
+
+
+
+
+IV. According to Wikipedia, FizzBuzz is a group word game for children to teach 
+them about division. This may or may not be true, but this question is generally 
+used to torture screen young computer science graduates during programming interviews.
+Basically, this is how it works: you print the integers from 1 to N, 
+replacing any of them divisible by X with Fizz or, if they are divisible by Y, 
+with Buzz. If the number is divisible by both X and Y, you print FizzBuzz instead.
+
+Check the samples for further clarification.
+
+Input
+Input contains a single test case. Each test case contains three integers on a single line, X, Y and N (1≤X<Y≤N≤100).
+
+Output
+Print integers from 1 to N in order, each on its own line, replacing the ones divisible by X with Fizz, the ones divisible by Y with Buzz and ones divisible by both X and Y with FizzBuzz.
+
+Sample Input 1		Sample Output 1
+
+2 3 7			1
+			Fizz
+			Buzz
+			Fizz
+			5
+			FizzBuzz
+			7
+
+Sample Input 2		Sample Output 2
+
+2 4 7			1
+			Fizz
+			3
+			FizzBuzz
+			5
+			Fizz
+			7
+
+Sample Input 3		Sample Output 3
+
+3 5 7			1
+			2
+			Fizz
+			4
+			Buzz
+			Fizz
+			7
+
+---------------------------------------------------------------
+C.
+I. 2048 is a single-player puzzle game created by Gabriele Cirulli1. It is played on a 4×4 grid that contains integers ≥2 that are powers of 2. The player can use a keyboard arrow key (left/up/right/down) to move all the tiles simultaneously. Tiles slide as far as possible in the chosen direction until they are stopped by either another tile or the edge of the grid. If two tiles of the same number collide while moving, they will merge into a tile with the total value of the two tiles that collided. The resulting tile cannot merge with another tile again in the same move. Please observe this merging behavior carefully in all Sample Inputs and Outputs.
+
+Input
+The input is always a valid game state of a 2048 puzzle. The first four lines of input, that each contains four integers, describe the 16 integers in the 4×4 grid of 2048 puzzle. The j-th integer in the i-th line denotes the content of the cell located at the i-th row and the j-th cell. For this problem, all integers in the input will be either {0, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024}. Integer 0 means an empty cell.
+
+The fifth line of input contains an integer 0, 1, 2, or 3 that denotes a left, up, right, or down move executed by the player, respectively.
+
+Output
+Output four lines with four integers each. Two integers in a line must be separated by a single space. This describes the new state of the 4×4 grid of 2048 puzzle. Again, integer 0 means an empty cell. Note that in this problem, you can ignore the part from the 2048 puzzle where it introduces a new random tile with a value of either 2 or 4 in an empty spot of the board at the start of a new turn.
+
+Sample Input 1		Sample Output 1
+
+2 0 0 2			4 0 0 0
+4 16 8 2		4 16 8 2
+2 64 32 4		2 64 32 4
+1024 1024 64 0		2048 64 0 0
+0
+
+Sample Input 2		Sample Output 2
+
+2 0 0 2			2 16 8 4
+4 16 8 2		4 64 32 4
+2 64 32 4		2 1024 64 0
+1024 1024 64 0		1024 0 0 0
+1
+
+
+Sample Input 3		Sample Output 3
+
+2 0 0 2			0 0 0 4
+4 16 8 2		4 16 8 2
+2 64 32 4		2 64 32 4
+1024 1024 64 0		0 0 2048 64
+2
+
+
+Sample Input 4		Sample Output 4
+
+2 0 0 2			2 0 0 0
+4 16 8 2		4 16 8 0
+2 64 32 4		2 64 32 4
+1024 1024 64 0		1024 1024 64 4
+3
+
+
+Sample Input 5		Sample Output 5
+
+2 2 4 8			4 4 8 0
+4 0 4 4			8 4 0 0
+16 16 16 16		32 32 0 0
+32 16 16 32		32 32 32 0
+0
+
+
+Sample Input 6		Sample Output 6
+
+2 2 4 8			0 4 4 8
+4 0 4 4			0 0 4 8
+16 16 16 16		0 0 32 32
+32 16 16 32		0 32 32 32
+2
+
+
+II. You are in charge of a server that needs to run some submitted 
+tasks on a first-come, first-served basis. Each day, 
+you can dedicate the server to run these tasks for at 
+most T minutes. Given the time each task takes, you want to know 
+how many of them will be finished today.
+Consider the following example. 
+Assume T=180 and the tasks take 45,30,55,20,80, and 20 minutes 
+(in order they are submitted). Then, only four tasks can be completed. 
+The first four tasks can be completed because they take 150 minutes, 
+but not the first five, because they take 230 minutes which is greater than 180. 
+Notice that although there is enough time to perform the sixth task 
+(which takes 20 minutes) after completing the fourth task, you cannot do that 
+because the fifth task is not done yet.
+
+Input
+The input consists of a single test case. 
+The first line contains two integers n and T where 1≤n≤50 is the number 
+of tasks and 1≤T≤500. The next line contains n positive integers no more than 100
+indicating how long each task takes in order they are submitted.
+
+Output
+Display the number of tasks that can be completed in T minutes on a first-come, first-served basis.
+
+Sample Input 1			Sample Output 1
+
+6 180				4
+45 30 55 20 80 20
+
+Sample Input 2			Sample Output 2
+
+10 60				5
+20 7 10 8 10 27 2 3 10 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

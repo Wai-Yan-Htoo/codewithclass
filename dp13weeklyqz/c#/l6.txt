@@ -1,0 +1,143 @@
+1. What will be the output of the following C# code?
+
+ class program
+ {
+     static void Main(string[] args)
+     {
+         int i = 5;
+         int v = 40;
+         int[] p = new int[4];
+         try
+         {
+             p[i] = v;
+         }
+         catch(IndexOutOfRangeException e)
+         {
+             Console.WriteLine("Index out of bounds");
+         }
+         Console.WriteLine("Remaining program");
+     }
+ }
+A. value 40 will be assigned to a[5];
+
+B.
+The output will be :
+Index out of bounds
+Remaining program
+
+C.
+The output will be :
+Remaining program
+
+D. None of the mentioned
+
+View Answer
+
+Answer: b
+Explanation:None.
+
+2. What will be the output of the following C# code?
+
+ static void Main(string[] args)
+ {            
+     try 
+     {
+         Console.WriteLine("csharp" + " " + 1/Convert.ToInt32(0));
+     }
+     catch(ArithmeticException e) 
+     {
+         Console.WriteLine("Java");        	
+     }
+     Console.ReadLine();
+ }
+A. csharp
+B. java
+C. run time error
+D. csharp 0
+View Answer
+
+Answer: b
+Explanation: 1 / 0, hence system out of flow exception error.
+
+3,  What will be the output of the following C# code?
+
+  {
+      int sum = 10;
+      try
+      {
+          int i;
+          for (i = -1; i < 3; ++i)
+          sum = (sum / i);
+      }
+      catch (ArithmeticException e)
+      {
+          Console.WriteLine("0");
+      }
+      Console.WriteLine(sum);
+      Console.ReadLine();
+  }
+A. 0
+B. 0 5
+C. 0 -10
+D. Compile time error
+View Answer
+
+Answer: c
+Explanation: Value of variable sum is printed as sum and is defined outside try & catch block. If defined inside the try block then sum would be undefined for execution.
+Output : 0 -10
+
+
+4. What will be the output of the following C# code?
+
+{
+    try 
+    {
+        int []a = {1, 2, 3, 4, 5};
+        for (int i = 0; i < 5; ++i) 
+        Console.WriteLine(a[i]);
+        int x = (1 / Convert.ToInt32(0));
+    }
+    catch(IndexOutOfRangeException e) 
+    {
+        Console.WriteLine("A");        	
+    }
+    catch(ArithmeticException e) 
+    {     	
+        Console.WriteLine("B");
+    }
+    Console.ReadLine();
+}
+a) 1234
+b) 12345
+c) Run time error
+d) 12345B
+View Answer
+
+Answer: d
+Explanation: Due to occurrence of arithmetic exception here ‘B’ is printed after 12345.
+Output : 12345B
+
+5. What will be the output of the following C# code?
+
+{
+    try 
+    {
+        int []a = {1, 2, 3, 4, 5};
+        for (int i = 0; i < 7; ++i) 
+        Console.WriteLine(a[i]);
+    }
+    catch(IndexOutOfRangeException e) 
+    {
+        Console.WriteLine("0");        	
+    }
+    Console.ReadLine();
+}
+A. 12345
+B. 123450
+C. 1234500
+D. Compile time error
+View Answer
+
+Answer: b
+Explanation: When array index goes out of bound then IndexOutOfBoundsException exception is thrown by the system.
+Output : 123450
